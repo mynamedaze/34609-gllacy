@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Academy: Глейси - каталог</title>
+</head>
+<body>
+	<header class="main-header">
+		<div class="container">
+			<div class="main-navigator">
+				<div class="logo-img-small">
+					<a href="#"><img src="http://placehold.it/150x50" width="150" height="50"></a>
+				</div>
+				<ul>
+					<li><a class="red-btn active" href="#">Каталог</a></li>
+					<li><a href="#">Доставка и оплата</a></li>
+					<li><a href="#">О компании</a></li>
+				</ul>
+			</div>
+			<div class="user-block">
+				<a class="find" href="#">Поиск</a>
+				<a class="login" href="#">Вход</a>
+				<a class="basket filled" href="#">Пусто</a>
+			</div>
+			<span>С 10 до 20, ежедневно</span>
+			<span class="phone-number">8 812 450-25-25</span>
+		</div>
+	</header>
+	<main class="container">
+		<div class="breadcrumbs">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li>Сливочное</li>
+				</ul>
+			</div>
+			<h1>Сливочное мороженое</h1>
+			<form>
+				<div class="sort"><!--подозреваю что все инпуты, селекты, ползунки надо будет заворачивать в дивы, ибо на радиобаттонах и чекбоксах очевидно что без блока фон с закруглениями не получится... вроде. Пока не заворачивал-->
+					<span>Сортировка:</span>
+					<select>
+						<option>по популярности</option>
+					</select>
+				</div>
+				<div class="prise"><!--вот с этим ползунком чет все очень плохо, я как понял это JS-->
+					<span>Цена:<output>100</output> руб. - <output>500</output> руб.</span>
+					<input type="range" id="prisecount" name="prisecount" min="100" max="500" step="10">
+				</div>
+				<div class="fatness">
+					<span>Жирность:</span>
+					<label><input type="radio" name="fatness-percent" value="0">0%</label>
+					<label><input type="radio" name="fatness-percent" value="10-" checked>до 10%</label>
+					<label><input type="radio" name="fatness-percent" value="30-">до 30%</label>
+					<label><input type="radio" name="fatness-percent" value="30+">выше 30%</label>
+				</div>
+				<div class="filler">
+					<span><input type="checkbox" name="chocolates" checked>шоколадные</span>
+					<span><input type="checkbox" name="sugar" checked>сахарные присыпки</span>
+					<span><input type="checkbox" name="fruits">фрукты</span>
+					<span><input type="checkbox" name="syrups">сиропы</span>
+					<span><input type="checkbox" name="jams">джемы</span>
+				</div>
+				<input type="submit" name="accept" value="Применить">
+			</form>
+			<div class="ices">
+				<article class="ice ice-cream-citrus">
+					<p><span>310&#8381;</span>/кг</p>
+					<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				</article>
+				<article class="ice ice-cream-coffee">
+					<p><span>380&#8381;</span>/кг</p>
+					<a href="#">Сливочно-кофейное с кусочками шоколада</a>
+				</article>
+				<article class="ice ice-cream-strawberry">
+					<p><span>355&#8381;</span>/кг</p>
+					<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+				</article>
+				<article class="ice ice-cream-creamb">
+					<p><span>415&#8381;</span>/кг</p>
+					<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+				</article>
+				<article class="ice ice-cream-cowberry">
+					<p><span>325&#8381;</span>/кг</p>
+					<a href="#">Сливочное с брусничным джемом</a>
+				</article>
+				<article class="ice ice-cream-billberry">
+					<p><span>410&#8381;</span>/кг</p>
+					<a href="#">Сливочно-черничное с цельными ягодами черники</a>
+				</article>
+				<article class="ice ice-cream-lemon">
+					<p><span>375&#8381;</span>/кг</p>
+					<a href="#">Сливочно-лемонное с карамельной присыпкой</a>
+				</article>
+				<article class="ice ice-cream-chocolate">
+					<p><span>320&#8381;</span>/кг</p>
+					<a href="#">Сливочное с шоколадной стружкой</a>
+				</article>
+				<article class="ice ice-cream-vanilla">
+					<p><span>440&#8381;</span>/кг</p>
+					<a href="#">Сливочно-ванильное с кусочками шоколада</a>
+				</article>
+				<article class="ice ice-cream-mentol">
+					<p><span>435&#8381;</span>/кг</p>
+					<a href="#">Сливочное с ментоловым сиропом</a>
+				</article>
+				<article class="ice ice-cream-blackchocolate">
+					<p><span>355&#8381;</span>/кг</p>
+					<a href="#">Сливочное с кусочками черного шоколада</a>
+				</article>
+				<article class="ice ice-cream-mint">
+					<p><span>420&#8381;</span>/кг</p>
+					<a href="#">Сливочное с мятным сиропом</a>
+				</article>
+			</div>
+			<div class="paginator">
+            <a class="prev" href="#prev">Назад</a>
+            <a href class="active">1</span>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a class="next" href="#next">Вперёд</a>
+        </div>
+	</main>
+	<footer>
+		<div class="container">
+			<section class="footer-social">		
+			    <ul>
+			    	<li><a class="social-btn social-btn-twit" href="#">Твиттер</a></li>
+			    	<li><a class="social-btn social-btn-inst" href="#">Инстаграм</a></li>
+			    	<li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
+			       	<li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
+			    </ul>
+			</section>
+			<section class="footer-links">
+				<a class="contragents" href="#">Для поставщиков</a>
+				<a href="#">Наши документы</a>
+				<a href="#">О производстве</a>
+				<a href="#">Экологические стандарты</a>
+			</section>
+			<section class="footer-copyright">
+				<a class="htmlacademy-logo" href="#"><img src="http://placehold.it/150x50" width="150" height="50"><span>html academy</span></a>
+				<p>Сделано в <a class="btn" href="https://htmlacademy.ru">HTML Academy</a> &copy; 2016
+			</section>
+		</div>
+	</footer>
+</body>
+</html>
