@@ -1,0 +1,122 @@
+body {
+	color: #fff;
+}
+.basket::before {
+	content: "";
+	padding-right: 20px;
+	background-image: url("../img/basket.svg");
+	background-repeat: no-repeat;
+}
+.filled::before {
+	background-image: url("../img/basket-hover.svg"), url("../img/basket-fill.svg");
+	background-position: center center, 4px 3px;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #849d8f;
+	max-width: 1200px;
+	min-width: 200px;
+}
+li {
+	list-style-type: none;
+}
+.offers {
+
+}
+.offer {
+
+}
+.offer-raspberry {
+	background-image: url("../img/banner-raspberry.jpg");
+}
+.offer-chocolate {
+	background-image: url("../img/banner-chocolate.jpg");
+}
+.hit {
+	background-image: url("../img/hit.png");
+	background-repeat: no-repeat;
+	width: 61px;
+	height: 61px;
+}
+.about-glaccy {
+	background-image: url("../img/waffles.jpg");
+	color: #000;
+}
+.about {
+	display: inline-block;
+	vertical-align: top;
+}
+.about::before {
+	content: "";
+	display: inline-block;
+	background-repeat: no-repeat;
+	padding-right: 50px;
+	height: 50px;
+}
+.about-1::before {
+	background-image: url("../img/seo/ice-cream.svg");
+}
+.about-2::before {
+	background-image: url("../img/seo/cow.svg");
+}
+.about-3::before {
+	background-image: url("../img/seo/leaf.svg");
+}
+.about-4::before {
+	background-image: url("../img/seo/termometer.svg");
+}
+.blog {
+	color: #000;
+}
+.blog-news {
+	background-color: #fff;
+	background-image: url("../img/news-strawberry.jpg");
+	background-repeat: no-repeat;
+}
+.subscribe {
+	background-image: url("../img/mail-pattern.png");
+	border: 1px solid transparent;
+	border-radius: 14px;
+}
+.subscribe-inner {
+	margin: 4px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	background-color: #f8f7f4;
+	border: 1px solid transparent;
+	border-radius: 10px;
+}
+.map {
+	background-image: url("../img/pin.svg"), url("../img/pin-shadow.png"), url("../img/map.jpg");
+	background-repeat: no-repeat;
+}
+.footer-social ul {
+	list-style-type: none;
+}
+.footer-social li {
+	display: inline-block;
+}
+a.social-btn {
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	background-position: center center;
+	background-repeat: no-repeat;
+	opacity: 0.8;
+	border: 3px solid #dbe3de;
+	border-radius: 50%;
+}
+a.social-btn-vk {
+	background-image: url("../img/social/vkontakte.svg");
+}
+a.social-btn-fb {
+	background-image: url("../img/social/facebook.svg");
+}
+a.social-btn-inst {
+	background-image: url("../img/social/instagram.svg");
+}
+a.social-btn-twit {
+	background-image: url("../img/social/twitter.svg");
+}
