@@ -1,5 +1,14 @@
+@font-face {
+  font-family: 'Roboto';
+  src:
+    url('../fonts/roboto.woff'),
+    url('../fonts/roboto.woff2'),
+	url('../fonts/robotomedium.woff');
+}
+
 body {
 	color: #fff;
+	font-family: "Roboto";
 }
 .basket::before {
 	content: "";
