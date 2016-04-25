@@ -15,6 +15,7 @@
 body {
 	color: #fff;
 	font-family: "Roboto medium";
+	background-color: yellow;
 }
 .basket::before {
 	content: "";
