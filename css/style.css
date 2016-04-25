@@ -1,14 +1,20 @@
 @font-face {
   font-family: 'Roboto';
   src:
-    url('../fonts/roboto.woff'),
-    url('../fonts/roboto.woff2'),
-	url('../fonts/robotomedium.woff');
+    url('../fonts/roboto.woff2') format('woff2'),
+    url('../fonts/roboto.woff') format('woff');
 }
+@font-face {
+  font-family: 'Roboto medium';
+  src:
+    url('../fonts/robotomedium.woff2') format('woff2'),
+    url('../fonts/robotomedium.woff') format('woff');
+}
+
 
 body {
 	color: #fff;
-	font-family: "Roboto";
+	font-family: "Roboto medium";
 }
 .basket::before {
 	content: "";
@@ -108,14 +114,18 @@ li {
 	display: inline-block;
 }
 a.social-btn {
-	width: 32px;
-	height: 32px;
+	width: 31px;
+	height: 31px;
 	display: inline-block;
-	background-position: center center;
+	background-position: center;
 	background-repeat: no-repeat;
 	opacity: 0.8;
-	border: 3px solid #dbe3de;
+	box-shadow: 0 0 0 3px #dbe3de;
 	border-radius: 50%;
+}
+a.social-btn:hover {
+	opacity: 1;
+	box-shadow: 0 0 0 4px #dbe3de;
 }
 a.social-btn-vk {
 	background-image: url("../img/social/vkontakte.svg");
