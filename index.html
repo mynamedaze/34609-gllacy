@@ -7,8 +7,8 @@
 </head>
 <body> <!--вот сюда фон ну и весь его градиент через css-->
 	<header class="main-header">
-		<div class="container">
-			<div class="main-navigator">
+		<div class="container clearfix">
+			<nav class="main-navigator">
 				<div class="logo-img-small">
 					<a href="#"><img src="img/Logo.svg" alt="Glaccy"></a>
 				</div>
@@ -17,17 +17,19 @@
 					<li><a href="#">Доставка и оплата</a></li>
 					<li><a href="#">О компании</a></li>
 				</ul>
-			</div>
+			</nav>
 			<div class="user-block">
-				<a class="find" href="#">Поиск</a>
+				<a class="find" href="#"></a>
 				<a class="login" href="#">Вход</a>
 				<a class="basket" href="#">Пусто</a>
+				<div class="head-contacts">
+					<span>С 10 до 20, ежедневно</span>
+					<span class="phone-number">8 812 450-25-25</span>
+				</div>
 			</div>
-			<span>С 10 до 20, ежедневно</span><!--стоит ли этот спан и нижний в отдельный блок хватать? Просто если да, то легче будет его выравнивать и при игре с его width не надо будет использовать <br>-->
-			<span class="phone-number">8 812 450-25-25</span>
 		</div>
 	</header>
-	<main class="container">
+	<main class="container clearfix">
 		<div class="slider">
 			<input type="radio" id="btn-1" name="toggle" checked>
 			<input type="radio" id="btn-2" name="toggle">
@@ -46,7 +48,7 @@
 				</div>                        
 			</div>
 		</div>
-		<div class="offers">
+		<div class="offers clearfix">
 			<div class="offer offer-raspberry">
 				<h3>Малинка даром!</h3>
 				<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -87,7 +89,7 @@
 				<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
 			</article>
 		</div>
-		<div class="about-glaccy">
+		<div class="about-glaccy clearfix">
 			<p>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
 			<ul>
 				<li class="about about-1">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
@@ -96,7 +98,7 @@
 				<li class="about about-4">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</li>
 			</ul>
 		</div>
-		<div class="blog"><!--есть ли смысл эти 2 блока вот в этот объединять? Опять же будет проще с 900-1200 играть-->
+		<div class="blog clearfix">
 			<div class="blog-news">
 				<h4>Новое в нашем блоге</h4>
 				<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
@@ -120,12 +122,12 @@
 					<dd>8 812 450-25-25</dd>
 					<dt>(с 10 до 20 ежедневно)</dt>
 				</dl>
+				<a class="red-btn feedback-btn" href="#">Форма обратной связи</a>
 			</div>
-			<a class="red-btn feedback-btn" href="#">Форма обратной связи</a>
 		</div>
 	</main>
-	<footer>
-		<div class="container">
+	<footer class="main-footer">
+		<div class="container clearfix">
 			<section class="footer-social">		
 			    <ul>
 			    	<li><a class="social-btn social-btn-twit" href="#"></a></li>
