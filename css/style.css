@@ -10,6 +10,7 @@
     url('../fonts/robotomedium.woff2') format('woff2'),
     url('../fonts/robotomedium.woff') format('woff');
 }
+
 body {
 	color: #fff;
 	font-family: "Roboto medium";
@@ -109,19 +110,25 @@ li {
 .offer {
 	width: 560px;
 	min-height: 229px;
+	border-radius: 14px;
 }
 .offer-raspberry {
 	background-image: url("../img/banner-raspberry.jpg");
+	background-position: -27px -94px;
+	background-repeat: no-repeat;
 	float: left;
 }
 .offer-chocolate {
 	background-image: url("../img/banner-chocolate.jpg");
+	background-position: -218px -104px;
+	background-repeat: no-repeat;
 	float: right;
 }
 .ices {
 	margin-top: 20px;
 	background-color: magenta;
 	text-align: center;
+	font-size: 0px;
 }
 .ice {
 	display: inline-block;
@@ -131,10 +138,15 @@ li {
 	height: 362px;
 	background-color: red;
 	margin-bottom: 5px;
+	margin-right: 26px;
+}
+.ice:nth-child(4n) {
+	margin-right: 0px;
 }
 .ice p {
-	margin-top: -20px;
-	margin-left: -180px;
+	margin-top: -63px;
+	margin-left: -125px;
+	text-shadow: 1px 1px 4px #313235;
 }
 .hit {
 	position: absolute;
@@ -144,6 +156,20 @@ li {
 	background-repeat: no-repeat;
 	width: 61px;
 	height: 61px;
+}
+.price {
+	font-size: 45px;
+	font-weight: bold;
+}
+.rubl {
+	-webkit-filter: drop-shadow(1px 1px 3px #313235);
+}
+.measure {
+	font-size: 30px;
+	font-weight: bold;
+}
+.ice a {
+	font-size: 12px;
 }
 .about-glaccy {
 	background-image: url("../img/waffles.jpg");
