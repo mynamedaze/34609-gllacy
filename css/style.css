@@ -22,6 +22,7 @@ body {
 	margin-right: auto;
 	background-color: #849d8f;
 	width: 1146px;
+	min-height: 1px;
 	padding: 0 27px;
 	border-top: 1px solid transparent;
 }
@@ -29,6 +30,9 @@ body {
 	content: "";
 	display: table;
 	clear: both;
+}
+.main-header {
+	background-color: black;
 }
 .find::before {
 	content: "";
@@ -92,7 +96,7 @@ li {
 }
 .slider {
 	background-color: orange;
-	margin-top: 20px;
+	margin-top: 19px;
 }
 .breadcrumbs li {
 	display: inline-block;
@@ -232,6 +236,7 @@ li {
 footer {
 	background-color: black;
 }
+
 .footer-social {
 	float: left;
 	width: 300px;
