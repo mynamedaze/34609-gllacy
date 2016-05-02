@@ -3,19 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>HTML Academy: Глейси</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body> <!--вот сюда фон ну и весь его градиент через css-->
+<body>
 	<header class="main-header">
 		<div class="container clearfix">
 			<nav class="main-navigator">
 				<div class="logo-img-small">
-					<a href="#"><img src="img/Logo.svg" alt="Glaccy"></a>
+					<img src="img/Logo.svg" alt="Glaccy">
 				</div>
 				<ul>
 					<li><a href="#">Каталог</a></li>
 					<li><a href="#">Доставка и оплата</a></li>
-					<li><a href="#">О компании</a></li>
+					<li><a href="#">О Компании</a></li>
 				</ul>
 			</nav>
 			<div class="user-block">
@@ -61,31 +62,24 @@
 			</div>
 		</div>
 		<div class="ices">
-			<article class="ice ice-cream-citrus">
-				<img class="ice-img" src="img/ices/ice-cream-citrus.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267px" height="267px">
-				<div class="hit"></div>
-				<p><span class="price">310</span><img src="img/rubl.svg" alt="Рубль" class="rubl"><span class="measure">/кг</span></p>
+			<article class="ice hit">
+				<img class="ice-img" src="img/ices/ice-cream-citrus.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
+				<p><span class="price">310</span><span class="measure rubl">/кг</span></p>
 				<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 			</article>
-			<article class="ice ice-cream-coffee">
-				<img class="ice-img" src="img/ices/ice-cream-coffee.png" alt="Сливочно-кофейное с кусочками шоколада" width="267px" height="267px">
-				<div class="hit">
-				</div>
-				<p><span class="price">380</span><img src="img/rubl.svg" alt="Рубль" class="rubl"><span class="measure">/кг</span></p>
+			<article class="ice hit">
+				<img class="ice-img" src="img/ices/ice-cream-coffee.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
+				<p><span class="price">380</span><span class="measure rubl">/кг</span></p>
 				<a href="#">Сливочно-кофейное с кусочками шоколада</a>
 			</article>
-				<article class="ice ice-cream-strawberry">
-				<img class="ice-img" src="img/ices/ice-cream-strawberry.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267px" height="267px">
-				<div class="hit">
-				</div>
-				<p><span class="price">355</span><img src="img/rubl.svg" alt="Рубль" class="rubl"><span class="measure">/кг</span></p>
+				<article class="ice hit">
+				<img class="ice-img" src="img/ices/ice-cream-strawberry.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
+				<p><span class="price">355</span><span class="measure rubl">/кг</span></p>
 				<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 			</article>
-			<article class="ice ice-cream-creamb">
-				<img class="ice-img" src="img/ices/ice-cream-creamb.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267px" height="267px">
-				<div class="hit">
-				</div>
-				<p><span class="price">415</span><img src="img/rubl.svg" alt="Рубль" class="rubl"><span class="measure">/кг</span></p>
+			<article class="ice hit">
+				<img class="ice-img" src="img/ices/ice-cream-creamb.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
+				<p><span class="price">415</span><span class="measure rubl">/кг</span></p>
 				<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
 			</article>
 		</div>
@@ -93,8 +87,8 @@
 			<p>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
 			<ul>
 				<li class="about about-1">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-				<li class="about about-2">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-				<li class="about about-3">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+				<li class="about about-2">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+				<li class="about about-3">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
 				<li class="about about-4">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</li>
 			</ul>
 		</div>
@@ -115,13 +109,11 @@
 		</div>
 		<div class="map">
 			<div class="map-address">
-				<dl>
-					<dt>Адрес главного офиса и офлайн магазина:</dt>
-					<dd>ул. Большая Конюшенная 19/8, Санкт-петербург</dd>
-					<dt>Для заказов по телефону:</dt>
-					<dd>8 812 450-25-25</dd>
-					<dt>(с 10 до 20 ежедневно)</dt>
-				</dl>
+				<p class="">Адрес главного офиса и офлайн магазина:</p>
+				<p>ул. Большая Конюшенная 19/8, Санкт-петербург</p>
+				<p>Для заказов по телефону:</p>
+				<p>8 812 450-25-25</p>
+				<p>(с 10 до 20 ежедневно)</p>
 				<a class="red-btn feedback-btn" href="#">Форма обратной связи</a>
 			</div>
 		</div>
