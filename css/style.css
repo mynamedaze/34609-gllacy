@@ -177,7 +177,8 @@ linear-gradient(
 	float: left;
 	background-color: yellow;
 	width: 400px;
-	padding-left: 16px;
+	margin-left: 16px;
+	padding-left: 0px;
 	margin-top: 23px;
 } 
 .main-menu > li {
@@ -327,13 +328,34 @@ li .new-stuff {
 .find:hover::before {
 	-webkit-filter: invert(1);
 }
-.popup-find {
-	width: 200px;
-	height: 200px;
+.user-block .popup-find {
+	display: none;
+	background-color: #f8f7f4;
+	border-radius: 5px;
+	width: 341px;
+	height: 84px;
 	position: absolute;
 	z-index: 10;
+	left: -308px;
+	top: 36px;
+	font-size: 20px;
+	box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+.popup-find input[type="text"] {
+	font-family: "robotoregular", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	width: 296px;
+	border: 1px solid #d3d3d2;
+	border-radius: 4px;
+	padding-top: 8px;
+	padding-bottom: 10px;
+	padding-left: 13px;
+	margin-left: 15px;
+	margin-top: 20px;
 }
 .login {
+	position: relative;
 	padding-left: 16px;
 	padding-right: 18px;
 	margin-right: 9px;
@@ -351,6 +373,18 @@ li .new-stuff {
 }
 .login:hover::before {
 	-webkit-filter: invert(1);
+}
+.authorization {
+	position: absolute;
+	z-index: 5;
+	background-color: #f8f7f4;
+	border-radius: 5px;
+	width: 277px;
+	height: 214px;
+	box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+.authorization input {
+	font-size: 14px;
 }
 .basket {
 	padding-left: 16px;
