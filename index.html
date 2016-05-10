@@ -7,113 +7,136 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+	<input type="radio" id="btn-1" name="toggle" checked>
+    <input type="radio" id="btn-2" name="toggle">
+    <input type="radio" id="btn-3" name="toggle">
+	<div class="site-wrapper">
 	<header class="main-header">
 		<div class="container clearfix">
 			<nav class="main-navigator">
 				<div class="logo-img-small">
-					<img src="img/Logo.svg" alt="Glaccy">
-				</div>
-				<ul>
-					<li><a href="#">Каталог</a></li>
-					<li><a href="#">Доставка и оплата</a></li>
-					<li><a href="#">О Компании</a></li>
+					<a><img src="img/Logo.svg" alt="Glaccy">
+				</div></a>
+				<ul class="main-menu">
+					<li class="nav-catalog"><a class="nav-links" href="#"><span class="underline-fix">Каталог</span></a>
+						<ul class="nav-submenu">
+							<li><a class="new-stuff" href="#">Новинки</a></li>
+							<li><a href="inner.html">Сливочное</a></li>
+							<li><a href="#">Щербеты</a></li>
+							<li><a href="#">Фруктовый лед</a></li>
+							<li><a href="#">Мелорин</a></li>
+						</ul>
+					</li>
+					<li class="nav-delivery"><a class="nav-links" href="#"><span class="underline-fix">Доставка и оплата</span></a></li>
+					<li class="nav-about-us"><a class="nav-links" href="#"><span class="underline-fix">О Компании</span></a></li>
 				</ul>
 			</nav>
-			<div class="user-block">
-				<a class="find" href="#"></a>
-				<a class="login" href="#">Вход</a>
-				<a class="basket" href="#">Пусто</a>
+			<div class="user-blocks">
+				<ul>
+					<li class="user-block"><a class="find" href="#">Поиск</a>
+						<div class="popup-find">
+							<input type="text" name="exact-find" placeholder="Что ищем?">
+						</div>
+					</li>
+					<li><a class="login" href="#">Вход</a></li>
+					<li><a class="basket" href="#">Пусто</a></li>
+				</ul>
 				<div class="head-contacts">
-					<span>С 10 до 20, ежедневно</span>
+					<span>С 10 до 20, ежедневно</span><br>
 					<span class="phone-number">8 812 450-25-25</span>
 				</div>
-			</div>
 		</div>
 	</header>
+	<div class="container slider">
+        <div class="slide" id="slide1">
+        	<div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
+        	<a class="slide-btn" href="#">Давайте оба!</a>
+        </div>
+        <div class="slide" id="slide2">
+        	<div class="slide-title">Шоколадный пломбир и лимонный сорбет</div>
+        	<a class="slide-btn" href="#">Давайте оба!</a>
+        </div>
+        <div class="slide" id="slide3">
+        	<div class="slide-title">Пломбир с помадкой и клубничный щербет</div>
+        	<a class="slide-btn" href="#">Давайте оба!</a>
+        </div>
+        <div class="slider-controls">
+        	<label for="btn-1"></label>
+        	<label for="btn-2"></label>
+        	<label for="btn-3"></label>
+        </div>
+    </div>
 	<main class="container clearfix">
-		<div class="slider">
-			<input type="radio" id="btn-1" name="toggle" checked>
-			<input type="radio" id="btn-2" name="toggle">
-			<input type="radio" id="btn-3" name="toggle">
-			<div class="slider-controls">
-				<label for="btn-1"></label>
-				<label for="btn-2"></label>
-				<label for="btn-3"></label>
-			</div>
-			<div class="slider-inner">
-				<div class="slider-slides"><!--не лишний див? можно же просто inner сделать overflow hidden b 3 div'a с классом offer-main-->
-					<div class="offer-main"><!--сами 2 мороженых думаю убрать в background div'a и выровнять в css-->
-						<h2>Крем-брюле и пломбир с малиновым джемом</h2>
-						<a class="red-btn offer-buy-mainbtn" href="#">Давайте оба</a>
-					</div>				
-				</div>                        
-			</div>
-		</div>
 		<div class="offers clearfix">
 			<div class="offer offer-raspberry">
 				<h3>Малинка даром!</h3>
 				<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-				<a class="red-btn offer-buy-btn" href="#">Хочу варенье!</a>
+				<div class="btn-contain">
+					<a class="red-btn offer-buy-btn" href="#">Хочу варенье!</a>
+				</div>
 			</div>
 			<div class="offer offer-chocolate">
 				<h3>Шоколадки даром!</h3>
 				<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-				<a class="red-btn offer-buy-btn" href="#">Хочу шоколадки!</a>
+				<div class="btn-contain">
+					<a class="red-btn offer-buy-btn" href="#">Хочу шоколадки!</a>
+				</div>
 			</div>
 		</div>
 		<div class="ices">
 			<article class="ice hit">
 				<img class="ice-img" src="img/ices/ice-cream-citrus.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
 				<p><span class="price">310</span><span class="measure rubl">/кг</span></p>
-				<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				<span class="ice-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
 			</article>
 			<article class="ice hit">
 				<img class="ice-img" src="img/ices/ice-cream-coffee.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
 				<p><span class="price">380</span><span class="measure rubl">/кг</span></p>
-				<a href="#">Сливочно-кофейное с кусочками шоколада</a>
+				<span class="ice-name">Сливочно-кофейное с кусочками шоколада</span>
 			</article>
 				<article class="ice hit">
 				<img class="ice-img" src="img/ices/ice-cream-strawberry.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
 				<p><span class="price">355</span><span class="measure rubl">/кг</span></p>
-				<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+				<span class="ice-name">Сливочно-клубничное с присыпкой из белого шоколада</span>
 			</article>
 			<article class="ice hit">
 				<img class="ice-img" src="img/ices/ice-cream-creamb.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
 				<p><span class="price">415</span><span class="measure rubl">/кг</span></p>
-				<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+				<span class="ice-name">Сливочное крем-брюле с карамельной подливкой</span>
 			</article>
 		</div>
 		<div class="about-glaccy clearfix">
 			<p>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
 			<ul>
-				<li class="about about-1">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-				<li class="about about-2">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-				<li class="about about-3">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-				<li class="about about-4">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</li>
+				<li class="about"><img src="img/seo/ice-cream.svg">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+				<li class="about"><img src="img/seo/cow.svg">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+				<li class="about"><img src="img/seo/leaf.svg">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+				<li class="about"><img src="img/seo/termometer.svg">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</li>
 			</ul>
 		</div>
 		<div class="blog clearfix">
 			<div class="blog-news">
 				<h4>Новое в нашем блоге</h4>
-				<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+				<a href="#"><span class="blog-solution">10 &nbsp;способов сервировки фруктовых щербетов<br> к столу</span></a>
 			</div>
 			<div class="subscribe">
 				<div class="subscribe-inner">
 					<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
 					<form>
 						<input type="email" placeholder="Электронная почта" required>
-						<input type="submit" value="Отправить">
+						<input type="submit" class="red-btn" value="Отправить">
 					</form>
 				</div>
 			</div>
 		</div>
 		<div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124007!2d30.32089461618798!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1462639975563" width="1200" height="425" frameborder="0" style="border:0" allowfullscreen></iframe>
 			<div class="map-address">
-				<p class="">Адрес главного офиса и офлайн магазина:</p>
-				<p>ул. Большая Конюшенная 19/8, Санкт-петербург</p>
-				<p>Для заказов по телефону:</p>
-				<p>8 812 450-25-25</p>
-				<p>(с 10 до 20 ежедневно)</p>
+				<p>Адрес главного офиса и офлайн магазина:
+				<span class="address-street">ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
+				<p>Для заказов по телефону:
+				<span class="address-phone">8 812 450-25-25</span>
+				(с 10 до 20 ежедневно)</p>
 				<a class="red-btn feedback-btn" href="#">Форма обратной связи</a>
 			</div>
 		</div>
@@ -129,16 +152,19 @@
 			    </ul>
 			</section>
 			<section class="footer-links">
-				<a class="contragents" href="#">Для поставщиков</a>
-				<a href="#">Наши документы</a>
-				<a href="#">О производстве</a>
-				<a href="#">Экологические стандарты</a>
+				<ul>
+					<li><href="#">Для поставщиков</a></li>
+					<li><a href="#">Наши документы</a></li>
+					<li><a href="#">О производстве</a></li>
+					<li><a href="#">Экологические стандарты</a></li>
+				</ul>
 			</section>
 			<section class="footer-copyright">
 				<a class="htmlacademy-logo" href="#"><img src="img/htmlacademy-logo.svg" alt="HTML Academy"></a>
-				<p>Сделано в <a class="btn" href="https://htmlacademy.ru">HTML Academy</a> &copy; 2016
+				<p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
 			</section>
 		</div>
 	</footer>
+	</div>
 </body>
 </html>
