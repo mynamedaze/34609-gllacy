@@ -38,12 +38,17 @@
 							<input type="text" name="exact-find" placeholder="Что ищем?">
 						</div>
 					</li>
-					<li><a class="login" href="#">Вход</a>
+					<li class="user-block"><a class="login" href="#">Вход</a>
 						<div class="authorization">
 							<input type="email" name="email" placeholder="Электронная почта">\<input type="password" name="password" placeholder="Пароль">
+							<a href="#" class="red-btn login-btn">Войти</a>
+							<div class="login-assistant">
+								<a class="black-link" href="#">Забыли пароль?</a>
+								<a class="black-link" href="#">Новая регистрация</a>
+							</div>
 						</div>
 					</li>
-					<li><a class="basket" href="#">Пусто</a></li>
+					<li class="user-block"><a class="basket" href="#">Пусто</a></li>
 				</ul>
 				<div class="head-contacts">
 					<span>С 10 до 20, ежедневно</span><br>
@@ -157,7 +162,7 @@
 			</section>
 			<section class="footer-links">
 				<ul>
-					<li><href="#">Для поставщиков</a></li>
+					<li><a href="#">Для поставщиков</a></li>
 					<li><a href="#">Наши документы</a></li>
 					<li><a href="#">О производстве</a></li>
 					<li><a href="#">Экологические стандарты</a></li>
@@ -170,5 +175,18 @@
 		</div>
 	</footer>
 	</div>
+	<div class="modal-feedback">
+    	<button class="modal-feedback-close" type="button" title="Закрыть">Закрыть</button>
+    	<h2 class="modal-feedback-title">Мы обязательно вам ответим!</h2>
+    	<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+    		<input type="text" name="user-name" placeholder="Как вас зовут?">
+    		<input type="email" name="user-email" placeholder="Ваша почта для ответа?">
+    		<textarea>Напишите что-нибудь...</textarea>
+    		<div class="btn-contain">
+    			<button class="red-btn" type="submit">Отправить</button>
+    		</div>
+      </form>
+    </div>
+    <div class="modal-overlay"></div>
 </body>
 </html>

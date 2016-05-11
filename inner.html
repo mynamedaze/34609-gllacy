@@ -10,10 +10,10 @@
 		<div class="container clearfix">
 			<nav class="main-navigator">
 				<div class="logo-img-small">
-					<a href="index.html"><img src="img/logo.svg" alt="Glaccy">
+					<a><img src="img/logo.svg" alt="Glaccy">
 				</div></a>
 				<ul class="main-menu">
-					<li class="nav-catalog"><a class="nav-links current-page" href="#"><span class="underline-fix">Каталог</span></a>
+					<li class="nav-catalog"><a class="nav-links" href="#"><span class="underline-fix">Каталог</span></a>
 						<ul class="nav-submenu">
 							<li><a class="new-stuff" href="#">Новинки</a></li>
 							<li><a href="inner.html">Сливочное</a></li>
@@ -33,8 +33,17 @@
 							<input type="text" name="exact-find" placeholder="Что ищем?">
 						</div>
 					</li>
-					<li><a class="login" href="#">Вход</a></li>
-					<li><a class="basket filled" href="#">2 товара</a></li>
+					<li class="user-block"><a class="login" href="#">Вход</a>
+						<div class="authorization">
+							<input type="email" name="email" placeholder="Электронная почта">\<input type="password" name="password" placeholder="Пароль">
+							<a href="#" class="red-btn login-btn">Войти</a>
+							<div class="login-assistant">
+								<a class="black-link" href="#">Забыли пароль?</a>
+								<a class="black-link" href="#">Новая регистрация</a>
+							</div>
+						</div>
+					</li>
+					<li class="user-block"><a class="basket" href="#">Пусто</a></li>
 				</ul>
 				<div class="head-contacts">
 					<span>С 10 до 20, ежедневно</span><br>
