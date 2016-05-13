@@ -630,24 +630,62 @@ li .new-stuff {
 	background-color: magenta;
 	text-align: center;
 	font-size: 0px;
+	margin-left: -20px;
+	margin-right: -20px;
 }
 .ice {
 	display: inline-block;
 	vertical-align: top;
 	position: relative;
-	width: 267px;
-	height: 362px;
+	width: 277px;
+	min-height: 362px;
 	border-radius: 5px;
-	background-color: red;
 	margin-bottom: 0px;
-	margin-right: 26px;
+	margin-right: 16px;
+}
+.ice-content:after {
+	z-index: 1;
+	display: none;
+	content: "";
+	position: absolute;
+	width: 277px;
+	min-height: 400px;
+	top: 0px;
+	left: 0px;
+	box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.08);
+	border-radius: 5px;
 }
 .ice:hover {
-	background-image: url("../img/ice-back-hover.png");
-	box-shadow: 0 20px 20px 0px rgba(0, 0, 0, .08);
+	background-color:  rgba(255, 255, 255, 0.2);
+}
+.ice:hover .ice-content:after {
+	display: block;
 }
 .ice:nth-child(4n) {
 	margin-right: 0px;
+}
+.ice:hover .ice-about-btn {
+	display: block;
+}
+.ice-about-btn .overview-btn {
+	padding-top: 9px;
+	padding-bottom: 14px;
+	padding-left: 17px;
+	padding-right: 17px;
+	border-radius: 22px;
+}
+.ice-about-btn {
+	z-index: 7;
+	display: none;
+	position: absolute;
+	width: 277px;
+	height: 50px;
+	left: 0px;
+	bottom: -20px;
+	padding-top: 5px;
+}
+.ice-about-btn:hover {
+	display: block;
 }
 .ice-img {
 	margin-bottom: 12px;
@@ -655,6 +693,7 @@ li .new-stuff {
 .ice .ice-name {
 	background-image: url("../img/underline.png");
 	background-repeat: repeat-x;
+	background-color: green;
 	background-position: 0 19px;
 	font-size: 16px;
 	line-height: 22px;
@@ -663,13 +702,14 @@ li .new-stuff {
 	font-family: "robotobold", "Arial", sans-serif;
 	position: absolute;
 	top: 199px;
+	left: 5px;
 	text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
 }
 .hit::before {
 	content: "";
 	position: absolute;
 	top: 0px;
-	left: 0px;
+	left: 5px;
 	background-image: url("../img/hit.png");
 	background-repeat: no-repeat;
 	width: 61px;
@@ -695,7 +735,6 @@ li .new-stuff {
 	font-size: 30px;
 	font-weight: bold;
 }
-
 .about-glaccy {
 	font-family: "robotoregular", "Arial", sans-serif;
 	font-size: 16px;
@@ -822,7 +861,7 @@ li .new-stuff {
 	margin-bottom: 35px;
 }
 .subscribe-inner input[type="email"] {
-	width: 332px;
+	width: 368px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 14px;
@@ -1109,7 +1148,9 @@ body > input[type="radio"] {
   border-radius: 50%;
   cursor: pointer;
 }
-
+.slider-controls label:hover{
+background-color: rgba(248, 247, 244, 0.4);
+}
 #btn-1:checked ~ .site-wrapper #slide1,
 #btn-2:checked ~ .site-wrapper #slide2,
 #btn-3:checked ~ .site-wrapper #slide3 {
