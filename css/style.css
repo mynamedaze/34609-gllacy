@@ -438,7 +438,7 @@ li .new-stuff {
 	position: relative;
 	padding-left: 16px;
 	padding-right: 18px;
-	margin-right: 9px;
+	margin-right: 8px;
 }
 .login::before {
 	content: "";
@@ -932,6 +932,105 @@ li .new-stuff {
 	padding-right: 28px;
 	height: 44px;
 	border-radius: 22px;
+}
+.paginator {
+	width: 200px;
+    padding: 10px;
+    margin-top: 33px;
+    margin-left: 936px;
+    white-space: nowrap;
+    font-size: 0px;
+}
+.paginator a {
+	position: relative;
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: top;
+	font-family: "robotomedium", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	color: #fff;
+	background-image: none;
+	border-radius: 26px;
+	min-width: 26px;
+	height: 26px;
+	margin-left: 3px;
+	padding-top: 4px;
+	padding-left: 8px;
+}
+.paginator a:nth-child(2) {
+	margin-left: 6px;
+}
+.paginator a:last-child {
+	margin-left: 6px;
+}
+.paginator a:hover {
+	color: #fff;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.prev:active .prev-next::before,
+.prev:active .prev-next::after,
+.next:active .prev-next::before,
+.next:active .prev-next::after {
+	background-color: #000;
+}
+.unactive .prev-next::before,
+.unactive .prev-next::after {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.unactive:active .prev-next::before,
+.unactive:active .prev-next::after {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.paginator a:active {
+	color: #323232;
+	background-color: #fff;
+}
+.paginator .unactive:active {
+	background-color: transparent;
+}
+.paginator .unactive:hover {
+	background-color: transparent;
+}
+.paginator .active{
+	color: #323232;
+	background-color: #fff;
+}
+.paginator .active:hover{
+	color: #323232;
+	background-color: #fff;
+}
+.paginator .prev,
+.paginator .next {
+	text-indent: -10000px;
+}
+.pag-prev {
+	display: block;
+	background-color: red;
+}
+.prev-next::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 10px;
+	width: 9px;
+	height: 2px;
+	background-color: white;
+}
+.prev-next::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 15px;
+	width: 9px;
+	height: 2px;
+	background-color: white;
+}
+.prev .prev-next:before, .next .prev-next:after {
+	transform: rotate(-45deg);
+}
+.prev .prev-next:after, .next .prev-next:before {
+	transform: rotate(45deg);
 }
 footer {
 	background-color: black;
