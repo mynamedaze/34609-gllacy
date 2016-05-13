@@ -627,7 +627,6 @@ li .new-stuff {
 	float: right;
 }
 .ices {
-	background-color: magenta;
 	text-align: center;
 	font-size: 0px;
 	margin-left: -20px;
@@ -638,9 +637,10 @@ li .new-stuff {
 	vertical-align: top;
 	position: relative;
 	width: 277px;
-	min-height: 362px;
-	border-radius: 5px;
-	margin-bottom: 0px;
+	min-height: 329px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin-bottom: 33px;
 	margin-right: 16px;
 }
 .ice-content:after {
@@ -679,10 +679,16 @@ li .new-stuff {
 	display: none;
 	position: absolute;
 	width: 277px;
-	height: 50px;
+	height: 66px;
 	left: 0px;
-	bottom: -20px;
+	bottom: -71px;
 	padding-top: 5px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.ice-about-btn .overview-btn {
+	margin-top: 0px;
 }
 .ice-about-btn:hover {
 	display: block;
@@ -693,7 +699,6 @@ li .new-stuff {
 .ice .ice-name {
 	background-image: url("../img/underline.png");
 	background-repeat: repeat-x;
-	background-color: green;
 	background-position: 0 19px;
 	font-size: 16px;
 	line-height: 22px;
