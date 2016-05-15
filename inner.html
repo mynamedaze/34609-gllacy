@@ -3,9 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>HTML Academy: Глейси - каталог</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+<div class="site-wrapper">
 	<header class="main-header">
 		<div class="container clearfix">
 			<nav class="main-navigator">
@@ -30,7 +32,7 @@
 			</nav>
 			<div class="user-blocks">
 				<ul>
-					<li class="user-block find-block"><a class="find" href="#">Поиск</a>
+					<li class="user-block find-block"><button class="find">Поиск</button>
 						<div class="popup-corrector">
 							<div class="popup-find">
 								<div class="group-input">
@@ -40,7 +42,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="user-block login-block"><a class="login" href="#">Вход</a>
+					<li class="user-block login-block"><button class="login">Вход</button>
 						<div class="popup-corrector">
 							<div class="authorization">
 								<form action="#" method="post">
@@ -54,14 +56,14 @@
 									</div>
 									<a href="#" class="red-btn login-btn">Войти</a>
 									<div class="login-assistant">
-										<a class="black-link" href="#">Забыли пароль?</a>
+										<a class="black-link" href="#">Забыли пароль?</a><br>
 										<a class="black-link" href="#">Новая регистрация</a>
 									</div>
 								</form>
 							</div>
 						</div>
 					</li>
-					<li class="user-block basket-block"><a class="basket filled" href="#">2 товара</a>
+					<li class="user-block basket-block"><button class="basket filled">2товара</button>
 						<div class="popup-corrector">
 							<div class="basket-list">
 								<div class="basket-ice">
@@ -304,7 +306,7 @@
 			</section>
 			<section class="footer-links">
 				<ul>
-					<li><a href="#">Для поставщиков</a></li>
+					<li class="for-contragents"><a href="#">Для поставщиков</a></li>
 					<li><a href="#">Наши документы</a></li>
 					<li><a href="#">О производстве</a></li>
 					<li><a href="#">Экологические стандарты</a></li>
@@ -316,5 +318,7 @@
 			</section>
 		</div>
 	</footer>
+</div>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

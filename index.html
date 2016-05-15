@@ -35,7 +35,7 @@
 				</nav>
 				<div class="user-blocks">
 					<ul>
-						<li class="user-block find-block"><a class="find" href="#">Поиск</a>
+						<li class="user-block find-block"><button class="find">Поиск</button>
 							<div class="popup-corrector">
 								<div class="popup-find">
 									<div class="group-input">
@@ -45,7 +45,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="user-block login-block"><a class="login" href="#">Вход</a>
+						<li class="user-block login-block"><button class="login">Вход</button>
 							<div class="popup-corrector">
 								<div class="authorization">
 									<form action="#" method="post">
@@ -59,14 +59,14 @@
 										</div>
 										<a href="#" class="red-btn login-btn">Войти</a>
 										<div class="login-assistant">
-											<a class="black-link" href="#">Забыли пароль?</a>
+											<a class="black-link" href="#">Забыли пароль?</a><br>
 											<a class="black-link" href="#">Новая регистрация</a>
 										</div>
 									</form>
 								</div>
 							</div>
 						</li>
-						<li class="user-block"><a class="basket" href="#">Пусто</a></li>
+						<li class="user-block"><button class="basket">Пусто</button></li>
 					</ul>
 					<div class="head-contacts">
 						<span>С 10 до 20, ежедневно</span><br>
@@ -165,7 +165,7 @@
 			<div class="blog clearfix">
 				<div class="blog-news">
 					<h4>Новое в нашем блоге</h4>
-					<a href="#"><span class="blog-solution">10 &nbsp;способов сервировки фруктовых щербетов<br> к столу</span></a>
+					<a href="#"><span class="blog-solution">10 &nbsp;способов сервировки фруктовых щербетов к&nbsp;столу</span></a>
 				</div>
 				<div class="subscribe">
 					<div class="subscribe-inner">
@@ -188,7 +188,7 @@
 					<p>Для заказов по телефону:
 					<span class="address-phone">8 812 450-25-25</span>
 					(с 10 до 20 ежедневно)</p>
-					<a class="red-btn feedback-btn" href="#">Форма обратной связи</a>
+					<a class="red-btn feedback-btn" href="">Форма обратной связи</a>
 				</div>
 			</div>
 		</main>
@@ -230,7 +230,7 @@
     			<label class="like-holder">Ваша почта для ответа?</label>
     		</div>
     		<div class="group-input">
-    			<textarea required></textarea>
+    			<textarea name="write-area" required></textarea>
     			<label class="like-holder">Напишите что-нибудь...</label>
     		</div>
     		<div class="btn-contain">
@@ -239,5 +239,6 @@
       </form>
     </div>
     <div class="modal-overlay"></div>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
