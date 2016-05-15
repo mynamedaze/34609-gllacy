@@ -44,7 +44,7 @@
 						<div class="popup-corrector">
 							<div class="authorization">
 								<div class="group-input">
-									<input type="email" name="email" required>
+									<input type="text" name="email" required>
 									<label class="like-holder">Электронная почта</label>
 								</div>
 								<div class="group-input">
@@ -69,39 +69,66 @@
 	</header>
 	<main class="container">
 		<div class="breadcrumbs">
-				<ul>
-					<li><a href="#">Главная</a></li>
-					<li><a href="#">Каталог</a></li>
-					<li>Сливочное</li>
-				</ul>
-			</div>
-			<h1>Сливочное мороженое</h1>
-			<form>
-				<div class="sort">
+			<ul>
+				<li><a href="#"><span>Главная<span></a></li>
+				<li><a href="#"><span>Каталог<span></a></li>
+				<li><span>Сливочное<span></li>
+			</ul>
+		</div>
+		<h1>Сливочное мороженое</h1>
+			<form class="main-filter">
+				<div class="form-sort">
 					<span>Сортировка:</span>
 					<select>
 						<option>по популярности</option>
+						<option>сначала недорогие</option>
+						<option>сначала дорогие</option>
+						<option>по жирности</option>
 					</select>
 				</div>
-				<div class="prise">
-					<span>Цена:<output>100</output> руб. - <output>500</output> руб.</span>
-					<input type="range" id="prisecount" name="prisecount" min="100" max="500" step="10">
+				<div class="form-price">
+					<span>Цена: <output>100</output> руб. &ndash; <output>500</output> руб.</span>
+					<div class="price-container">
+						<div class="range-controls">
+	        				<div class="scale">
+	          					<div class="bar"></div>
+	        				</div>
+	        				<div class="range-toggle range-toggle-min"></div>
+	        				<div class="range-toggle range-toggle-max"></div>
+						</div>
+					</div>
 				</div>
-				<div class="fatness">
+				<div class="form-fatness">
 					<span>Жирность:</span>
-					<label><input type="radio" name="fatness-percent" value="0">0%</label>
-					<label><input type="radio" name="fatness-percent" value="10-" checked>до 10%</label>
-					<label><input type="radio" name="fatness-percent" value="30-">до 30%</label>
-					<label><input type="radio" name="fatness-percent" value="30+">выше 30%</label>
+					<div class="fat-container">
+						<input type="radio" id="fat-inp-0" name="fatness-percent" value="0">
+						<label for="fat-inp-0" class="fat fat-0">0%</label>
+						<input type="radio" id="fat-inp-10" name="fatness-percent" value="10-" checked>
+						<label for="fat-inp-10" class="fat fat-10">до 10%</label>
+						<input type="radio" id="fat-inp-30m" name="fatness-percent" value="30-">
+						<label for="fat-inp-30m" class="fat fat-30m">до 30%</label>
+						<input type="radio" id="fat-inp-30b" name="fatness-percent" value="30+">
+						<label for="fat-inp-30b" class="fat fat-30b">выше 30%</label>
+					</div>
 				</div>
-				<div class="filler">
-					<label><input type="checkbox" name="chocolates" checked>шоколадные</label>
-					<label><input type="checkbox" name="sugar" checked>сахарные присыпки</label>
-					<label><input type="checkbox" name="fruits">фрукты</label>
-					<label><input type="checkbox" name="syrups">сиропы</label>
-					<label><input type="checkbox" name="jams">джемы</label>
+				<div class="form-filler">
+					<span>Наполнители:</span>
+					<div class="filler-container">
+						<input type="checkbox" id="fill-inp-chock" name="chocolates" checked>
+						<label for="fill-inp-chock" class="fill fill-chock">шоколадные</label>
+						<input type="checkbox" id="fill-inp-sugar" name="sugar" checked>
+						<label for="fill-inp-sugar" class="fill fill-sugar">сахарные присыпки</label>
+						<input type="checkbox" id="fill-inp-fruits" name="fruits">
+						<label for="fill-inp-fruits" class="fill fill-fruits">фрукты</label>
+						<input type="checkbox" id="fill-inp-syrups" name="syrups">
+						<label for="fill-inp-syrups" class="fill fill-syrups">сиропы</label>
+						<input type="checkbox" id="fill-inp-jams" name="jams">
+						<label for="fill-inp-jams" class="fill fill-jams">джемы</label>
+					</div>
 				</div>
-				<input type="submit" value="Применить">
+				<div class="form-submit">
+					<input type="submit" value="Применить">
+				</div>
 			</form>
 			<div class="ices">
 				<article class="ice ice-cream-citrus">
@@ -234,6 +261,7 @@
             <a href="#">5</a>
             <a class="next" href="#next"><div class="prev-next"></div></a>
         </div>
+        <div class="hr-like"></div>
 	</main>
 		<footer class="main-footer">
 		<div class="container clearfix">
