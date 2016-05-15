@@ -254,13 +254,13 @@ linear-gradient(
 	background-color: green;
 }
 .main-navigator .nav-links {
+	box-sizing: border-box;
 	display: block;
 	padding-top: 3px;
 	padding-bottom: 4px;
-	padding-left: 13px;
-	padding-right: 13px;
+	padding-left: 14px;
+	padding-right: 14px;
 	border-radius: 17px;
-	border: 1px solid transparent;
 	font-size: 16px;
 	background-image: none;
 }
@@ -1073,7 +1073,7 @@ main h1 {
 	font-size: 0px;
 	margin-left: -20px;
 	margin-right: -20px;
-	margin-bottom: 0px;
+	margin-bottom: 5px;
 }
 .ice {
 	display: inline-block;
@@ -1087,20 +1087,19 @@ main h1 {
 	margin-right: 16px;
 	padding-top: 5px;
 }
-.ice-content:after {
-	z-index: 1;
-	display: none;
-	content: "";
+
+.ice-content {
 	position: absolute;
+	padding-top: 5px;
 	width: 277px;
 	min-height: 400px;
 	top: 0px;
 	left: 0px;
-	box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.08);
 	border-radius: 5px;
 }
 .ice:hover {
 	background-color:  rgba(255, 255, 255, 0.2);
+	box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.08);
 }
 .ice:hover .ice-content:after {
 	display: block;
@@ -1127,7 +1126,7 @@ main h1 {
 	left: 0px;
 	bottom: -71px;
 	padding-top: 5px;
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255, 255, 255, 0.3);
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius: 5px;
 }
@@ -1141,6 +1140,7 @@ main h1 {
 	margin-bottom: 12px;
 }
 .ice .ice-name {
+	font-family: "robotomedium", "Arial", sans-serif;
 	background-image: url("../img/underline.png");
 	background-repeat: repeat-x;
 	background-position: 0 19px;
@@ -1155,6 +1155,7 @@ main h1 {
 	text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
 }
 .hit::before {
+	z-index: 2;
 	content: "";
 	position: absolute;
 	top: 5px;
@@ -1194,7 +1195,6 @@ main h1 {
 	background-color: #f2e7d5;
 	border-radius: 15px;
 	min-height: 304px;
-	margin-top: 5px;
 	margin-bottom: 40px;
 }
 .about-glaccy p {
@@ -1206,22 +1206,40 @@ main h1 {
 	margin-top: 22px;
 	padding-left: 20px;
 	padding-right: 20px;
-	margin-bottom: 21px;
+	margin-bottom: 10px;
 }
 .about-glaccy ul {
 	padding-left: 16px;
+	margin-top: 0px;
 }
 .about {
 	position: relative;
 	padding-left: 60px;
 	margin-right: 25px;
-	margin-bottom: 10px;
-	padding-bottom: 13px;
+	margin-bottom: 11px;
+	padding-top: 11px;
 	display: block;
 	float: left;
 	vertical-align: top;
 	width: 482px;
 	background-color: blue;
+	background-position: 3px 0px;
+}
+.about-ice-cream {
+	background-image: url(../img/seo/ice-cream.svg);
+	background-repeat: no-repeat;
+}
+.about-cow {
+	background-image: url("../img/seo/cow.svg");
+	background-repeat: no-repeat;
+}
+.about-leaf {
+	background-image: url("../img/seo/leaf.svg");
+	background-repeat: no-repeat;
+}
+.about-termometer {
+	background-image: url("../img/seo/termometer.svg");
+	background-repeat: no-repeat;
 }
 .about:nth-child(2n) {
 	margin-right: 0px;
@@ -1310,13 +1328,20 @@ main h1 {
 	line-height: 22px;
 	margin-bottom: 35px;
 }
-.subscribe-inner input[type="email"] {
+.subsribe-inner .group-input {
+
+}
+.subscribe-inner input[type="text"] {
 	width: 368px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 14px;
 	padding-right: 20px;
 	margin-right: 8px;
+}
+.subscribe-inner input[type="text"]:hover,
+.subscribe-inner input[type="text"]:focus {
+	padding-left: 13px;
 }
 .subscribe-inner input[type="submit"] {
 	border: none;
@@ -1354,6 +1379,12 @@ main h1 {
 	padding-top: 16px;
 	padding-left: 25px;
 
+}
+iframe {
+	width: 1200px;
+	height: 425px;
+	border: 0px;
+	frameborder: 0px;
 }
 .map-address p{
 	background-color: red;
@@ -1521,6 +1552,8 @@ footer {
 	line-height: 18px;
 }
 .footer-links a {
+	font-family: "robotoregular", "Arial", sans-serif;
+	font-size: 13px;
 	background-position: 0 17px;
 }
 .footer-links li:nth-child(2n){
@@ -1535,6 +1568,9 @@ footer {
 	width: 15px;
 	height: 13px;
 	margin-right: 6px;
+}
+.for-contragents a {
+	font-family: "robotobold", "Arial", sans-serif;
 }
 .footer-links li:first-child::before {
 	background-image: url("../img/heart.svg");
