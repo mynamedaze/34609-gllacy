@@ -160,6 +160,8 @@ input[type='email'],
 input[type='password'],
 textarea
 {
+    font-family: "robotobold", "Arial", sans-serif;
+    font-size: 16px;
     box-sizing: border-box;
     height: 44px;
     padding-top: 12px;
@@ -281,23 +283,17 @@ textarea:valid ~ .like-holder
     background: -webkit-linear-gradient(top, #e74a35, #f26843);
     background:         linear-gradient(to bottom, #e74a35, #f26843);
 }
-.main-header
-{
-    background-color: black;
-}
 .main-navigator
 {
     font-size: 0;
     float: left;
     width: 700px;
-    background-color: red;
 }
 .logo-img-small
 {
     float: left;
     margin-top: 8px;
     margin-left: -5px;
-    background-color: pink;
 }
 .main-navigator > ul
 {
@@ -306,15 +302,14 @@ textarea:valid ~ .like-holder
     margin-top: 23px;
     margin-left: 16px;
     padding-left: 0;
-    background-color: yellow;
 }
 .main-menu > li
 {
     display: inline-block;
-    background-color: green;
 }
 .main-navigator .nav-links
-{
+{   
+    font-family: "robotobold", "Arial", sans-serif;
     font-size: 16px;
     display: block;
     box-sizing: border-box;
@@ -458,7 +453,6 @@ li .new-stuff
     float: right;
     width: 300px;
     margin-top: 22px;
-    background-color: purple;
 }
 .user-blocks > ul
 {
@@ -551,9 +545,6 @@ li .new-stuff
 }
 .popup-find input
 {
-    font-family: 'robotoregular', 'Arial', sans-serif;
-    font-size: 14px;
-    line-height: 24px;
     width: 311px;
     padding-top: 11px;
     padding-bottom: 10px;
@@ -616,8 +607,6 @@ li .new-stuff
 }
 .authorization input
 {
-    font-family: 'robotoregular', 'Arial', sans-serif;
-    font-size: 14px;
     width: 241px;
     margin-bottom: 20px;
     padding-top: 11px;
@@ -652,7 +641,7 @@ li .new-stuff
 }
 .basket
 {
-    width: 116px;
+    padding-right: 33px;
     padding-left: 16px;
 }
 .basket-block
@@ -677,6 +666,9 @@ li .new-stuff
 {
     background-image: url('../img/basket-hover.svg');
     background-repeat: no-repeat;
+}
+.filled {
+    padding-right: 18px;
 }
 .filled::before
 {
@@ -852,11 +844,6 @@ li .new-stuff
     margin-right: 0;
     margin-left: auto;
     text-align: right;
-    background-color: green;
-}
-.head-contacts span
-{
-    background-color: brown;
 }
 .head-contacts .phone-number
 {
@@ -917,7 +904,6 @@ main h1
     line-height: 41px;
     margin-top: 0;
     margin-bottom: 27px;
-    background-color: black;
 }
 /*form*/
 .main-filter
@@ -1232,7 +1218,6 @@ main h1
 .offers
 {
     margin-bottom: 35px;
-    background-color: yellow;
 }
 .offer
 {
@@ -1251,7 +1236,6 @@ main h1
     line-height: 41px;
     margin-top: 0;
     margin-bottom: 0;
-    background-color: black;
 }
 .offer p
 {
@@ -1260,8 +1244,6 @@ main h1
     line-height: 22px;
     margin-top: 15px;
     padding-left: 1px;
-
-    background-color: black;
 }
 .offer .btn-contain
 {
@@ -1440,7 +1422,7 @@ main h1
     line-height: 22px;
     min-height: 304px;
     margin-bottom: 40px;
-    color: #000;
+    color: #323232;
     border: 1px solid transparent;
     border-radius: 15px;
     background-color: #f2e7d5;
@@ -1456,7 +1438,6 @@ main h1
     padding-right: 20px;
     padding-left: 20px;
     letter-spacing: .2px;
-    background-color: orange;
 }
 .about-glaccy ul
 {
@@ -1474,7 +1455,6 @@ main h1
     padding-top: 11px;
     padding-left: 60px;
     vertical-align: top;
-    background-color: blue;
     background-position: 3px 0;
 }
 .about-ice-cream
@@ -1511,8 +1491,8 @@ main h1
 .blog
 {
     margin-bottom: 40px;
-    color: #000;
-    background-color: #adc;
+    color: #323232;
+    
 }
 .blog-news,
 .subscribe
@@ -1540,7 +1520,6 @@ main h1
     line-height: 22px;
     width: 290px;
     margin-bottom: 5px;
-    background-color: red;
 }
 .blog-news a
 {
@@ -1594,7 +1573,6 @@ main h1
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 35px;
-    background-color: orange;
 }
 
 .subscribe-inner input[type='text']
@@ -1663,7 +1641,6 @@ iframe
     line-height: 20px;
     width: 200px;
     margin-bottom: 18px;
-    background-color: red;
 }
 .map-address .address-street,
 .map-address .address-phone
@@ -1823,7 +1800,6 @@ footer
 {
     min-height: 84px;
     margin-top: 19px;
-    background-color: black;
 }
 .footer-social
 {
@@ -1833,8 +1809,6 @@ footer
     height: 39px;
     margin-top: 16px;
     margin-right: 181px;
-
-    background-color: yellow;
 }
 .footer-links
 {
@@ -1842,7 +1816,6 @@ footer
     float: left;
     width: 400px;
     margin-top: 13px;
-    background-color: red;
 }
 .footer-links ul
 {
@@ -2004,7 +1977,7 @@ body > input[type='radio']
 
 .slide-title
 {
-    font-family: 'robotoblack', 'Arial', sans-serif;
+    font-family: "robotoblack", "Arial", sans-serif;
     font-size: 60px;
     line-height: 60px;
     width: 700px;
@@ -2014,13 +1987,14 @@ body > input[type='radio']
 
 .slide-btn
 {
-    font-size: 31px;
-    line-height: 41px;
+    font-family: "robotobold", "Arial", sans-serif;
+    font-size: 32px;
+    line-height: 44px;
     display: inline-block;
-    padding-top: 11px;
-    padding-right: 44px;
-    padding-bottom: 12px;
-    padding-left: 44px;
+    padding-top: 9px;
+    padding-right: 41px;
+    padding-bottom: 11px;
+    padding-left: 41px;
     vertical-align: top;
     text-decoration: none;
     color: #fff;
@@ -2208,7 +2182,7 @@ body > input[type='radio']
 /*modal*/
 .modal-feedback
 {
-    position: absolute;
+    position: fixed;
     z-index: 30;
     top: 338px;
     left: 50%;
@@ -2225,16 +2199,9 @@ body > input[type='radio']
 }
 .modal-feedback-show
 {
-    position: fixed;
     display: block;
-
     -webkit-animation: bounce .6s;
             animation: bounce .6s;
-}
-.modal-error
-{
-    -webkit-animation: shake .6s;
-            animation: shake .6s;
 }
 .modal-overlay
 {
@@ -2245,8 +2212,10 @@ body > input[type='radio']
     display: none;
     width: 100%;
     height: 100%;
-
     background: rgba(0, 0, 0, .3);
+}
+.modal-overlay-show {
+    display: block;
 }
 .modal-feedback-close
 {
@@ -2297,9 +2266,6 @@ body > input[type='radio']
 }
 .modal-feedback input
 {
-    font-family: 'robotoregular', 'Arial', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
     width: 267px;
     margin-bottom: 20px;
     padding-top: 12px;
