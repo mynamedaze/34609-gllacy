@@ -1568,6 +1568,9 @@ main h1
     border-radius: 9px;
     background-color: #f8f7f4;
 }
+.subscribe-inner .like-holder {
+    font-size: 16px;
+}
 .subscribe-inner p
 {
     font-size: 16px;
@@ -1600,7 +1603,6 @@ main h1
 }
 .map
 {
-    position: relative;
     font-size: 14px;
     font-weight: 400;
     width: 100%;
@@ -1611,11 +1613,18 @@ main h1
     background-repeat: no-repeat;
     background-position: center -108px;
 }
+.adress-container {
+    position: relative;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
 .map-address
 {
     position: absolute;
     top: 0;
-    left: 64.2%;
+    right: 0;
     display: block;
     float: right;
     width: 277px;
