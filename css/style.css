@@ -2179,7 +2179,7 @@ body > input[type='radio']
                 transform: translateX(10px);
     }
 }
-/*modal*/
+/*modal-feedback*/
 .modal-feedback
 {
     position: fixed;
