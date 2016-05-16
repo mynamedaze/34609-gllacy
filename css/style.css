@@ -2184,7 +2184,7 @@ body > input[type='radio']
 {
     position: fixed;
     z-index: 30;
-    top: 30%;
+    top: 25%;
     left: 50%;
     display: none;
     box-sizing: border-box;
