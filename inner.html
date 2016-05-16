@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>HTML Academy: Глейси - каталог</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <div class="site-wrapper">
@@ -16,15 +16,13 @@
 				</div>
 				<ul class="main-menu">
 					<li class="nav-catalog"><a class="nav-links current-page" href="#"><span class="underline-fix">Каталог</span></a>
-					<div class="popup-corrector">
-							<ul class="nav-submenu">
-								<li><a class="new-stuff" href="#">Новинки</a></li>
-								<li class="current-page"><a href="inner.html">Сливочное</a></li>
-								<li><a href="#">Щербеты</a></li>
-								<li><a href="#">Фруктовый лед</a></li>
-								<li><a href="#">Мелорин</a></li>
-							</ul>
-					</div>
+						<ul class="nav-submenu">
+							<li><a class="new-stuff" href="#">Новинки</a></li>
+							<li class="current-subpage"><a href="inner.html">Сливочное</a></li>
+							<li><a href="#">Щербеты</a></li>
+							<li><a href="#">Фруктовый лед</a></li>
+							<li><a href="#">Мелорин</a></li>
+						</ul>
 					</li>
 					<li class="nav-delivery"><a class="nav-links" href="#"><span class="underline-fix">Доставка и оплата</span></a></li>
 					<li class="nav-about-us"><a class="nav-links" href="#"><span class="underline-fix">О Компании</span></a></li>
@@ -33,60 +31,54 @@
 			<div class="user-blocks">
 				<ul>
 					<li class="user-block find-block"><button class="find">Поиск</button>
-						<div class="popup-corrector">
-							<div class="popup-find">
-								<div class="group-input">
-									<input type="text" name="exact-find" required>
-									<label class="like-holder">Что ищем?</label>
-								</div>
+						<div class="popup-find">
+							<div class="group-input">
+								<input type="text" name="exact-find" id="exact-find-field" required>
+								<label for="exact-find-field" class="like-holder">Что ищем?</label>
 							</div>
 						</div>
 					</li>
 					<li class="user-block login-block"><button class="login">Вход</button>
-						<div class="popup-corrector">
-							<div class="authorization">
-								<form action="#" method="post">
-									<div class="group-input">
-										<input type="text" name="email" required>
-										<label class="like-holder">Электронная почта</label>
-									</div>
-									<div class="group-input">
-										<input type="password" name="password" required>
-										<label class="like-holder">Пароль</label>
-									</div>
-									<a href="#" class="red-btn login-btn">Войти</a>
-									<div class="login-assistant">
-										<a class="black-link" href="#">Забыли пароль?</a><br>
-										<a class="black-link" href="#">Новая регистрация</a>
-									</div>
-								</form>
-							</div>
+						<div class="authorization">
+							<form action="#" method="post">
+								<div class="group-input">
+									<input type="text" name="email" id="email-field" required>
+									<label for="email-field" class="like-holder">Электронная почта</label>
+								</div>
+								<div class="group-input">
+									<input type="password" name="password" id="password-field" required>
+									<label for="password-field" class="like-holder">Пароль</label>
+								</div>
+								<a href="#" class="red-btn login-btn">Войти</a>
+								<div class="login-assistant">
+									<a class="black-link" href="#">Забыли пароль?</a><br>
+									<a class="black-link" href="#">Новая регистрация</a>
+								</div>
+							</form>
 						</div>
 					</li>
 					<li class="user-block basket-block"><button class="basket filled">2товара</button>
-						<div class="popup-corrector">
-							<div class="basket-list">
-								<div class="basket-ice">
-									<button class="ice-delete" type="button" title="Закрыть">Закрыть</button>
-									<img src="img/ices/little-cream-citrus.png" alt="иконка мороженого">
-									<span class="ice-name">Пломбир с апельсиновым джемом</span>
-									<span class="ice-weight">1,5кг х <span class="one-ice-price">200 руб.</span></span>
-									<span class="ice-summary">300 руб.</span>
-								</div>
-								<div class="basket-ice">
-									<button class="ice-delete" type="button" title="Закрыть">Закрыть</button>
-									<img src="img/ices/little-cream-strawberry.png" alt="иконка мороженого">
-									<span class="ice-name">Клубничный пломбир с присыпкой из белого шоколада</span>
-									<span class="ice-weight">1,5кг х <span class="one-ice-price">300 руб.</span></span>
-									<span class="ice-summary">450 руб.</span>
-								</div>
-								<div class="underline"></div>
-								<div class="summary">
-									<span class="summary-text">Итого:&nbsp;</span><span class="summary-num">750руб.</span>
-								</div>
-								<div class="btn-container">
-									<a href="#" class="red-btn make-order-btn">Оформить заказ</a>
-								</div>
+						<div class="basket-list">
+							<div class="basket-ice">
+								<button class="ice-delete" type="button" title="Закрыть">Закрыть</button>
+								<img src="img/ices/little-cream-citrus.png" alt="иконка мороженого">
+								<span class="ice-name">Пломбир с апельсиновым джемом</span>
+								<span class="ice-weight">1,5кг х <span class="one-ice-price">200 руб.</span></span>
+								<span class="ice-summary">300 руб.</span>
+							</div>
+							<div class="basket-ice">
+								<button class="ice-delete" type="button" title="Закрыть">Закрыть</button>
+								<img src="img/ices/little-cream-strawberry.png" alt="иконка мороженого">
+								<span class="ice-name">Клубничный пломбир с присыпкой из белого шоколада</span>
+								<span class="ice-weight">1,5кг х <span class="one-ice-price">300 руб.</span></span>
+								<span class="ice-summary">450 руб.</span>
+							</div>
+							<div class="underline"></div>
+							<div class="summary">
+								<span class="summary-text">Итого:&nbsp;</span><span class="summary-num">750руб.</span>
+							</div>
+							<div class="btn-container">
+								<a href="#" class="red-btn make-order-btn">Оформить заказ</a>
 							</div>
 						</div>
 					</li>
@@ -101,16 +93,16 @@
 	<main class="container">
 		<div class="breadcrumbs">
 			<ul>
-				<li><a href="#"><span>Главная</span></a></li>
-				<li><a href="#"><span>Каталог</span></a></li>
-				<li><span>Сливочное</span></li>
+				<li class="breadcrumb"><a href="#"><span>Главная</span></a></li>
+				<li class="breadcrumb"><a href="#"><span>Каталог</span></a></li>
+				<li class="breadcrumb"><span>Сливочное</span></li>
 			</ul>
 		</div>
 		<h1>Сливочное мороженое</h1>
 			<form class="main-filter" action="#" method="post">
 				<div class="form-sort">
 					<span>Сортировка:</span>
-					<select>
+					<select class="sort-select">
 						<option>по популярности</option>
 						<option>сначала недорогие</option>
 						<option>сначала дорогие</option>
@@ -121,11 +113,11 @@
 					<span>Цена: <output>100</output> руб. &ndash; <output>500</output> руб.</span>
 					<div class="price-container">
 						<div class="range-controls">
-	        				<div class="scale">
-	          					<div class="bar"></div>
-	        				</div>
-	        				<div class="range-toggle range-toggle-min"></div>
-	        				<div class="range-toggle range-toggle-max"></div>
+							<div class="scale">
+								<div class="bar"></div>
+							</div>
+							<div class="range-toggle range-toggle-min"></div>
+							<div class="range-toggle range-toggle-max"></div>
 						</div>
 					</div>
 				</div>
@@ -284,25 +276,25 @@
 				</article>
 			</div>
 		<div class="paginator">
-            <a class="prev unactive"><div class="prev-next"></div></a>
-            <a class="active">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
-            <a class="next" href="#next"><div class="prev-next"></div></a>
-        </div>
-        <div class="hr-like"></div>
+			<a class="prev unactive"><div class="prev-next"></div></a>
+			<a class="active">1</a>
+			<a href="#">2</a>
+			<a href="#">3</a>
+			<a href="#">4</a>
+			<a href="#">5</a>
+			<a class="next" href="#next"><div class="prev-next"></div></a>
+		</div>
+		<div class="hr-like"></div>
 	</main>
 	<footer class="main-footer">
 		<div class="container clearfix">
-			<section class="footer-social">		
-			    <ul>
-			    	<li><a class="social-btn social-btn-twit" href="#"></a></li>
-			    	<li><a class="social-btn social-btn-inst" href="#"></a></li>
-			    	<li><a class="social-btn social-btn-fb" href="#"></a></li>
-			       	<li><a class="social-btn social-btn-vk" href="#"></a></li>
-			    </ul>
+			<section class="footer-social">
+				<ul>
+					<li><a class="social-btn social-btn-twit" href="#"></a></li>
+					<li><a class="social-btn social-btn-inst" href="#"></a></li>
+					<li><a class="social-btn social-btn-fb" href="#"></a></li>
+					<li><a class="social-btn social-btn-vk" href="#"></a></li>
+				</ul>
 			</section>
 			<section class="footer-links">
 				<ul>
