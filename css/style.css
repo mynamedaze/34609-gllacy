@@ -780,7 +780,6 @@ li .new-stuff {
     background-repeat: repeat-x;
     background-position: 0 17px;
 }
-
 .breadcrumb:last-child span {
     text-decoration: none;
 }
@@ -1051,7 +1050,6 @@ select:focus option {
 }
 .form-submit input:active {
     color: #323232;
-
     border: none;
     outline: none;
     background-color: #eaeaea;
